@@ -1,7 +1,7 @@
-# goit-markup-hw-07
+# goit-markup-hw-08
 
-Home Work 07
+Home Work 08
 
-# https://blackyhat.github.io/goit-markup-hw-07/
+# https://blackyhat.github.io/goit-markup-hw-08/
 
-FORMS
+ADAPTIVE
