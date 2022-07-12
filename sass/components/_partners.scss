@@ -1,0 +1,36 @@
+/* ПАРТНЕРИ */
+.partners {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+
+  &__item:not(:first-child) {
+    margin-left: 30px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 170px;
+    height: 92px;
+    border: 1px solid rgb(175, 177, 184);
+    border-radius: 4px;
+    color: $social-buttons-color;
+
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__item:hover,
+  &__item:focus {
+    color: $accent-color;
+    border: 1px solid $accent-color;
+  }
+
+  &__logo {
+    fill: currentColor;
+  }
+}

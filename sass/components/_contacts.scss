@@ -1,0 +1,82 @@
+// ХЕДЕР КОНТАКТИ
+
+.contacts {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+
+  &__icon-mail {
+    margin-right: 10px;
+    fill: currentColor;
+  }
+
+  &__icon-phone {
+    margin-right: 10px;
+    fill: currentColor;
+  }
+}
+
+.contacts__item:last-child {
+  margin-left: 50px;
+}
+
+.contacts__link {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: $primary-text-color;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  transition-property: color;
+  transition-duration: $animation-duration;
+  transition-timing-function: $animation-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+// ФУТЕР КОНТАКТИ
+
+.address {
+  margin-bottom: 9px;
+
+  color: $primary-white-color;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  font-style: normal;
+}
+
+.info__contacts {
+  display: block;
+  color: $footer-contacts-text-color;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.join {
+  margin-left: 70px;
+
+  &__label {
+    display: block;
+    margin-bottom: 20px;
+    color: $primary-white-color;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1429;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+}

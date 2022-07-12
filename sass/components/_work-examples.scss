@@ -1,0 +1,33 @@
+/* СЕКЦІЯ ЧИМ МИ ЗАЙМАЄМОСЯ */
+
+.work-examples {
+  display: flex;
+
+  &__item:not(:first-child) {
+    margin-left: 30px;
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__label {
+    position: absolute;
+
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    padding-top: 27px;
+    padding-bottom: 27px;
+
+    text-align: center;
+    color: $primary-white-color;
+    background-color: $bg-color-work-examples;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1428;
+    letter-spacing: 0.03em;
+  }
+}

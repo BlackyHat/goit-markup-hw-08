@@ -1,0 +1,13 @@
+/* СЕКЦІЯ ФУТЕР */
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  min-width: 1200px;
+  background-color: $bg-grey-color;
+}
+
+.footer-wrap {
+  display: flex;
+  align-items: baseline;
+}

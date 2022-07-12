@@ -1,0 +1,42 @@
+/* СЕКЦІЯ ОСОБЛИВОСТІ */
+
+.features {
+  display: flex;
+}
+
+.features__item {
+  width: calc((100% - 3 * 30px) / 4);
+}
+
+.features__item:not(:first-child) {
+  margin-left: 30px;
+}
+
+.features__thumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+
+  background-color: $bg-color-for-features;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+
+.features__title {
+  margin-bottom: 10px;
+  display: inline-block;
+
+  color: $second-font-color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.features__text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}

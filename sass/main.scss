@@ -1,0 +1,29 @@
+@import './utils/_variables';
+@import './base/normalize';
+@import './utils/placeholders';
+@import './utils/mixins';
+@import './components/body';
+@import './components/page-header';
+@import './components/logo';
+@import './components/page-nav';
+@import './components/contacts';
+@import './components/social';
+@import './components/footer';
+@import './components/contacts';
+@import './components/subscribe';
+
+// main page components
+@import './components/hero';
+@import './components/modal';
+@import './components/modal-form';
+
+@import './components/features';
+@import './components/work-examples';
+@import './components/work-examples';
+@import './components/team';
+@import './components/partners';
+
+// portfolio page component
+@import './components/filter';
+@import './components/projects';
+@import './components/projects-overlay';

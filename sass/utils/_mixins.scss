@@ -1,0 +1,10 @@
+@mixin displayFlex($flex: flex, $mainAlign: center, $crossAlign: center) {
+  display: $flex;
+  justify-content: $mainAlign;
+  align-items: $crossAlign;
+}
+
+@mixin marginAuto($marginRight: auto, $marginLeft: auto) {
+  margin-right: $marginRight;
+  margin-left: $marginLeft;
+}

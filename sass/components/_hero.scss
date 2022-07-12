@@ -1,0 +1,44 @@
+/* СЕКЦІЯ ГЕРОЙ */
+
+.hero {
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+
+  background-image: linear-gradient(
+      to right,
+      $hero-linear-gradient 15%,
+      $hero-linear-gradient 30%
+    ),
+    url('../images/hero-img.jpg');
+
+  background-color: $background-color-for-hero;
+
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero__title {
+  max-width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+
+  color: $primary-white-color;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero__button {
+  @extend %button;
+  min-width: 200px;
+  padding: 10px 32px;
+}

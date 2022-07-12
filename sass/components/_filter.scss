@@ -1,0 +1,30 @@
+/* СЕКЦІЯ КНОПКИ ФІЛЬТРУ ПОРТФОЛІО*/
+
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+
+  &__item:not(:first-child) {
+    margin-left: 8px;
+  }
+}
+
+.filter__button {
+  @extend %button;
+  padding: 6px 22px;
+
+  color: $second-font-color;
+  background-color: $secondary-section-background;
+  font-weight: 500;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  &:hover,
+  &:focus {
+    color: $primary-white-color;
+    background-color: $accent-color;
+    box-shadow: $filter-button-shadow-box;
+  }
+}

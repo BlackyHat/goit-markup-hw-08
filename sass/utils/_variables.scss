@@ -1,0 +1,54 @@
+/* FONTS COLORS*/
+$primary-text-color: #757575;
+$second-font-color: #212121;
+$footer-contacts-text-color: rgba(255, 255, 255, 0.6);
+$modal-form-placeholder-color: rgba(117, 117, 117, 0.5);
+
+// FONTS
+
+$primaryFontFamily: Roboto, monospace;
+$secondaryFontFamily: Raleway, sans-serif;
+
+/* COLORS */
+$accent-color: rgb(33, 150, 243);
+$accent-color-shadow: #188ce8;
+$primary-white-color: #ffffff;
+$hero-linear-gradient: rgba(47, 48, 58, 0.4);
+$background-color-for-hero: rgb(47, 48, 58);
+$social-buttons-color: rgb(175, 177, 184);
+$modal-form-icon-color: rgba(33, 33, 33, 1);
+$overlay-bg-color: rgba(33, 150, 243, 0.9);
+
+/* BACKGROUND */
+$bg-grey-color: #2f303a;
+$secondary-section-background: #f5f4fa;
+$bg-color-for-features: rgba(245, 244, 250, 1);
+$bg-color-work-examples: rgba(47, 48, 58, 0.8);
+$footer-social-bg-for-icon: rgba(255, 255, 255, 0.1);
+$backgroun-color-modal-window: rgba(0, 0, 0, 0.2);
+
+/* BORDERS COLORS */
+$color-border-project-item: rgba(238, 238, 238, 1);
+$color-border-under-main-nav: rgb(236, 236, 236);
+$modal-form-input-border: rgba(33, 33, 33, 0.2);
+
+// BORDERS
+$primary-border-radius: 4px;
+
+// PADDINGS
+$section-paddings: 94px;
+
+// ANIMATION
+$animation-duration: 250ms;
+$animation-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+// SHADOWS
+
+$filter-button-shadow-box: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+  0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+$modal-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+  0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+$worker-list-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+  0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+$project-box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+  0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);

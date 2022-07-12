@@ -1,0 +1,72 @@
+body {
+  @include marginAuto();
+  background-color: $primary-white-color;
+  color: $primary-text-color;
+  font-family: $primaryFontFamily;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  text-decoration: none;
+  display: inline-block;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+*:focus-visible {
+  outline: none;
+}
+
+.container {
+  @include marginAuto();
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.section {
+  padding-top: $section-paddings;
+  padding-bottom: $section-paddings;
+
+  &__no-padding-top {
+    padding-top: 0;
+  }
+
+  &__title {
+    margin-bottom: 50px;
+    color: $second-font-color;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
