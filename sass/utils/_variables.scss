@@ -13,6 +13,7 @@ $secondaryFontFamily: Raleway, sans-serif;
 $accent-color: rgb(33, 150, 243);
 $accent-color-shadow: #188ce8;
 $primary-white-color: #ffffff;
+$primary-black-color: rgba(33, 33, 33, 1);
 $hero-linear-gradient: rgba(47, 48, 58, 0.4);
 $background-color-for-hero: rgb(47, 48, 58);
 $social-buttons-color: rgb(175, 177, 184);
@@ -36,7 +37,8 @@ $modal-form-input-border: rgba(33, 33, 33, 0.2);
 $primary-border-radius: 4px;
 
 // PADDINGS
-$section-paddings: 94px;
+$section-paddings-desktop: 94px;
+$section-paddings-mobile: 60px;
 
 // ANIMATION
 $animation-duration: 250ms;

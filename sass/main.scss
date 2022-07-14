@@ -1,3 +1,4 @@
+@import './utils/breakpoints';
 @import './utils/_variables';
 @import './base/normalize';
 @import './utils/placeholders';
@@ -5,6 +6,7 @@
 @import './components/body';
 @import './components/page-header';
 @import './components/logo';
+@import './components/main-nav__button';
 @import './components/page-nav';
 @import './components/contacts';
 @import './components/social';

@@ -1,4 +1,9 @@
 /* СЕКЦІЯ ЧИМ МИ ЗАЙМАЄМОСЯ */
+.section__work-examples {
+  @media screen and (max-width: $preDesktop) {
+    display: none;
+  }
+}
 
 .work-examples {
   display: flex;

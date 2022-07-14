@@ -2,43 +2,73 @@
 
 .hero {
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
-
-  max-width: 1600px;
   margin-right: auto;
   margin-left: auto;
-
-  background-image: linear-gradient(
-      to right,
-      $hero-linear-gradient 15%,
-      $hero-linear-gradient 30%
-    ),
-    url('../images/hero-img.jpg');
-
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-color: $background-color-for-hero;
-
   background-repeat: no-repeat;
   background-position: center;
+
+  @media screen and (max-width: $preTablet) {
+    max-width: $mobile;
+    background-image: linear-gradient(
+        to right,
+        $hero-linear-gradient 15%,
+        $hero-linear-gradient 30%
+      ),
+      url('../images/hero-img-mobile.jpg');
+  }
+  @media screen and (min-width: $tablet) {
+    max-width: $tablet;
+    background-image: linear-gradient(
+        to right,
+        $hero-linear-gradient 15%,
+        $hero-linear-gradient 30%
+      ),
+      url('../images/hero-img-tablet.jpg');
+  }
+  @media screen and (min-width: $desktop) {
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(
+        to right,
+        $hero-linear-gradient 15%,
+        $hero-linear-gradient 30%
+      ),
+      url('../images/hero-img.jpg');
+  }
 }
 
 .hero__title {
-  max-width: 696px;
+  max-width: 360px;
+
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
 
   color: $primary-white-color;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.6153;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  // @media screen and (min-width: $mobile) {
+  //   font-size: 44px;
+  //   line-height: 1.36;
+  //   max-width: 696px;
+  // }
+  @media screen and (min-width: $desktop) {
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 696px;
+  }
 }
 
 .hero__button {
   @extend %button;
-  min-width: 200px;
   padding: 10px 32px;
 }

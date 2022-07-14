@@ -1,14 +1,24 @@
 .main-nav {
-  display: flex;
-  align-items: center;
+  @include displayFlex($mainAlign: space-between);
 }
 
-.page-nav {
-  display: flex;
-  margin-left: 93px;
+// блок навігації посилань
 
-  &__item:not(:first-child) {
-    margin-left: 50px;
+.page-nav {
+  @media screen and (max-width: $preTablet) {
+    display: none;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+
+    &__item:not(:first-child) {
+      margin-left: 50px;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-left: 93px;
   }
 }
 

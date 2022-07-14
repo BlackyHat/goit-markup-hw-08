@@ -34,27 +34,53 @@ img {
 
 .container {
   @include marginAuto();
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+  text-align: center;
+
+  max-width: 480px;
+
+  @media screen and (min-width: $tablet) {
+    max-width: 768px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: 1200px;
+  }
 }
 
 .section {
-  padding-top: $section-paddings;
-  padding-bottom: $section-paddings;
+  padding-top: $section-paddings-mobile;
+  padding-bottom: $section-paddings-mobile;
+
+  @media screen and (min-width: $desktop) {
+    padding-top: $section-paddings-desktop;
+    padding-bottom: $section-paddings-desktop;
+  }
 
   &__no-padding-top {
     padding-top: 0;
   }
 
   &__title {
-    margin-bottom: 50px;
     color: $second-font-color;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
+
+    @media screen and (min-width: $mobile) {
+      margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: $tablet) {
+    }
+
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 50px;
+      font-size: 36px;
+    }
   }
 }
 

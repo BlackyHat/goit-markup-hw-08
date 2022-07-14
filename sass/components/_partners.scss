@@ -3,6 +3,7 @@
   display: flex;
   justify-content: center;
   gap: 30px;
+  flex-wrap: wrap;
 
   &__item:not(:first-child) {
     margin-left: 30px;
@@ -13,16 +14,24 @@
     justify-content: center;
     align-items: center;
 
-    width: 170px;
-    height: 92px;
-    border: 1px solid rgb(175, 177, 184);
-    border-radius: 4px;
-    color: $social-buttons-color;
+    @media screen and (min-width: $mobile) {
+      width: calc((100% - 2 * 30px) / 2);
+    }
 
-    transition-property: color, background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (min-width: $tablet) {
+      width: calc((100% - 3 * 30px) / 3);
+    }
+    @media screen and (min-width: $desktop) {
+      width: calc((100% - 6 * 30px) / 6);
+    }
   }
+  border: 1px solid rgb(175, 177, 184);
+  border-radius: 4px;
+  color: $social-buttons-color;
+
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   &__item:hover,
   &__item:focus {

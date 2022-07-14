@@ -2,16 +2,30 @@
 
 .filter {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 8px;
+  margin-bottom: 40px;
 
-  &__item:not(:first-child) {
-    margin-left: 8px;
+  @media screen and (min-width: $tablet) {
+    justify-content: center;
+    flex-wrap: nowrap;
+
+    margin-bottom: 30px;
+
+    &__item:not(:first-child) {
+      margin-left: 8px;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
   }
 }
 
 .filter__button {
   @extend %button;
+  min-width: 73px;
   padding: 6px 22px;
 
   color: $second-font-color;

@@ -1,15 +1,42 @@
 /* СЕКЦІЯ ОСОБЛИВОСТІ */
 
 .features {
-  display: flex;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .features__item {
-  width: calc((100% - 3 * 30px) / 4);
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 2 * 30px) / 2);
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - 3 * 30px) / 4);
+  }
+}
+
+.features__item:nth-child(2n) {
+  @media screen and (min-width: $tablet) {
+    margin-left: 30px;
+  }
+}
+
+.features__item:nth-child(n + 3) {
+  @media screen and (min-width: $tablet) and (max-width: $preDesktop) {
+    margin-top: 30px;
+  }
 }
 
 .features__item:not(:first-child) {
-  margin-left: 30px;
+  @media screen and (max-width: $preTablet) {
+    margin-top: 30px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-left: 30px;
+  }
 }
 
 .features__thumb {
@@ -26,17 +53,21 @@
 .features__title {
   margin-bottom: 10px;
   display: inline-block;
-
   color: $second-font-color;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  @media screen and (min-width: $desktop) {
+    text-align: left;
+  }
 }
 
 .features__text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  text-align: left;
 }

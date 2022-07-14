@@ -1,31 +1,44 @@
 // ХЕДЕР КОНТАКТИ
 
 .contacts {
-  display: flex;
-  margin-left: auto;
-  align-items: center;
-
-  &__icon-mail {
-    margin-right: 10px;
-    fill: currentColor;
+  @media screen and (max-width: 767px) {
+    display: none;
   }
 
-  &__icon-phone {
-    margin-right: 10px;
-    fill: currentColor;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &__icon-mail {
+      margin-right: 10px;
+      fill: currentColor;
+    }
+
+    &__icon-phone {
+      margin-right: 10px;
+      fill: currentColor;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-left: auto;
+    flex-direction: row;
+    align-items: center;
   }
 }
 
 .contacts__item:last-child {
-  margin-left: 50px;
+  @media screen and (min-width: $tablet) {
+    margin-top: 10px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-left: 50px;
+    margin-top: 0;
+  }
 }
 
 .contacts__link {
-  display: flex;
-  align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
-
   color: $primary-text-color;
   font-weight: 500;
   font-size: 14px;
@@ -39,19 +52,35 @@
   &:hover,
   &:focus {
     color: $accent-color;
+    @media screen and (min-width: $tablet) {
+      :first-child {
+        margin-bottom: 10px;
+      }
+    }
+
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      align-items: center;
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
   }
 }
 
 // ФУТЕР КОНТАКТИ
 
 .address {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 
   color: $primary-white-color;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
   font-style: normal;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 9px;
+  }
 }
 
 .info__contacts {
@@ -62,12 +91,17 @@
   letter-spacing: 0.03em;
 
   &:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 9px;
+    }
   }
 }
 
 .join {
-  margin-left: 70px;
+  @media screen and (min-width: $desktop) {
+    margin-left: 70px;
+  }
 
   &__label {
     display: block;
@@ -78,5 +112,9 @@
     line-height: 1.1429;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+
+    @media screen and (min-width: $desktop) {
+      text-align: left;
+    }
   }
 }
