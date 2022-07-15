@@ -3,9 +3,9 @@
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  min-width: 480px;
   background-color: $bg-grey-color;
 
+  min-width: 480px;
   @media screen and (min-width: $tablet) {
     min-width: 768px;
   }
@@ -34,5 +34,11 @@
     flex-wrap: nowrap;
 
     align-items: baseline;
+  }
+}
+
+.info {
+  @media screen and (min-width: $desktop) {
+    text-align: left;
   }
 }

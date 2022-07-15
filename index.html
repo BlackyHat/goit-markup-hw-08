@@ -15,37 +15,57 @@
   <header class="page-header">
     <div class="container main-nav">
       <a href="index.html" class="logo link"><span class="logo__accent">Web</span>Studio</a>
-      <nav>
-        <button type="button" class="main-nav__button">
-          <svg class="main-nav__icon">
-            <use href="./images/icons.svg#icon-menu"></use>
-          </svg>
-        </button>
 
-        <ul class="page-nav list">
-          <li class="page-nav__item">
-            <a href="./index.html" class="page-nav__link page-nav__link--current link">Студія</a>
+
+      <button type="button" class="main-nav__button" data-menu-button aria-expanded="false"
+        aria-controls="menu-container">
+        <svg class="main-nav__icon" width="40" height="40" aria-label="Перемикач мобільного меню">
+          <use class="main-nav__icon--open" href="./images/icons.svg#icon-menu"></use>
+          <use class="main-nav__icon--close" href="./images/icons.svg#icon-menu-close"></use>
+        </svg>
+      </button>
+
+      <div class="menu-container" id="menu-container" data-menu>
+        <nav>
+          <ul class="page-nav list">
+            <li class="page-nav__item">
+              <a href="./index.html" class="page-nav__link page-nav__link--current link">Студія</a>
+            </li>
+            <li class="page-nav__item">
+              <a href="./portfolio.html" class="page-nav__link link">Портфоліо</a>
+            </li>
+            <li class="page-nav__item"><a href="" class="page-nav__link link">Контакти</a></li>
+          </ul>
+        </nav>
+
+        <ul class="contacts list">
+          <li class="contacts__item">
+            <a href="mailto:info@devstudio.com" class="contacts__link link">
+              <svg class="contacts__icon-mail" width="16" height="12">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>info@devstudio.com</a>
           </li>
-          <li class="page-nav__item">
-            <a href="./portfolio.html" class="page-nav__link link">Портфоліо</a>
+          <li class="contacts__item">
+            <a href="tel:+380994744111" class="contacts__link link">
+              <svg class="contacts__icon-phone" width="10" height="16">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>+38 099 47 44 11</a>
           </li>
-          <li class="page-nav__item"><a href="" class="page-nav__link link">Контакти</a></li>
         </ul>
-      </nav>
-      <ul class="contacts list">
-        <li class="contacts__item">
-          <a href="mailto:info@devstudio.com" class="contacts__link link">
-            <svg class="contacts__icon-mail" width="16" height="12">
-              <use href="./images/icons.svg#icon-mail"></use>
-            </svg>info@devstudio.com</a>
-        </li>
-        <li class="contacts__item">
-          <a href="tel:+380994744111" class="contacts__link link">
-            <svg class="contacts__icon-phone" width="10" height="16">
-              <use href="./images/icons.svg#icon-phone"></use>
-            </svg>+38 099 47 44 11</a>
-        </li>
-      </ul>
+
+        <ul class="menu-social list">
+          <li class="menu-social__item"><a class="menu-social__link link" href="" aria-label="Инстаграмм">Инстаграмм
+            </a>
+          </li>
+          <li class="menu-social__item"><a class="menu-social__link link" href="" aria-label="Твиттер">Твиттер
+            </a></li>
+          <li class="menu-social__item"><a class="menu-social__link link" href="" aria-label="Фейсбук">Фейсбук
+            </a></li>
+          <li class="menu-social__item"><a class="menu-social__link link" href="" aria-label="Линкедин">Линкедин
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </header>
   <!--Основний розділ-->
@@ -319,32 +339,32 @@
       <div class="container">
         <h2 class="section__title">Постоянные клиенты</h2>
         <ul class="partners list">
-          <li><a class="partners__item link" href="#">
+          <li class="partners__item"><a class="partners__link link" href="#">
               <svg class="partners__logo" width="40" height="52">
                 <use href="./images/icons.svg#icon-logo-001"></use>
               </svg> </a>
           </li>
-          <li><a class="partners__item link" href="#">
+          <li class="partners__item"><a class="partners__link link" href="#">
               <svg class="partners__logo" width="46" height="52">
                 <use href="./images/icons.svg#icon-logo-002"></use>
               </svg></a>
           </li>
-          <li><a class="partners__item link" href="#">
+          <li class="partners__item"><a class="partners__link link" href="#">
               <svg class="partners__logo" width="44" height="42">
                 <use href="./images/icons.svg#icon-logo-003"></use>
               </svg></a>
           </li>
-          <li><a class="partners__item link" href="#">
+          <li class="partners__item"><a class="partners__link link" href="#">
               <svg class="partners__logo" width="85" height="41">
                 <use href="./images/icons.svg#icon-logo-004"></use>
               </svg></a>
           </li>
-          <li><a class="partners__item link" href="#">
+          <li class="partners__item"><a class="partners__link link" href="#">
               <svg class="partners__logo" width="63" height="42">
                 <use href="./images/icons.svg#icon-logo-005"></use>
               </svg></a>
           </li>
-          <li><a class="partners__item link" href="#">
+          <li class="partners__item"><a class="partners__link link" href="#">
               <svg class="partners__logo" width="94" height="44">
                 <use href="./images/icons.svg#icon-logo-006"></use>
               </svg></a>
@@ -401,10 +421,11 @@
           </form>
         </div>
       </div>
+    </div>
   </footer>
-
   <script src="./js/header.js"></script>
   <script src="./js/modal.js"></script>
+  <script src="./js/menu.js"></script>
 </body>
 
 </html>

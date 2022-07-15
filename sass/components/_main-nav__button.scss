@@ -3,12 +3,13 @@
   position: relative;
   width: 40px;
   height: 40px;
-  border: none;
+  border: 0;
+  z-index: 20;
 
   margin-top: 10px;
   margin-bottom: 10px;
   color: $primary-black-color;
-  background-color: $primary-white-color;
+  background-color: transparent;
   cursor: pointer;
 
   transition-property: color;
@@ -21,6 +22,17 @@
   }
 
   @media screen and (min-width: $tablet) {
+    display: none;
+  }
+
+  .main-nav__icon--close {
+    display: none;
+  }
+  &.is-open .main-nav__icon--close {
+    display: block;
+    z-index: 121;
+  }
+  &.is-open .main-nav__icon--open {
     display: none;
   }
 }

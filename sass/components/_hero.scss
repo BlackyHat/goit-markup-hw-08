@@ -1,7 +1,16 @@
 /* СЕКЦІЯ ГЕРОЙ */
 
 .hero {
+  min-width: 480px;
+  background-image: linear-gradient(
+      to right,
+      $hero-linear-gradient 15%,
+      $hero-linear-gradient 30%
+    ),
+    url('../images/hero-img-mobile.jpg');
+
   text-align: center;
+
   margin-right: auto;
   margin-left: auto;
   padding-top: 118px;
@@ -10,8 +19,8 @@
   background-repeat: no-repeat;
   background-position: center;
 
-  @media screen and (max-width: $preTablet) {
-    max-width: $mobile;
+  @media screen and (min-width: $mobile) {
+    max-width: $preTablet;
     background-image: linear-gradient(
         to right,
         $hero-linear-gradient 15%,
@@ -20,7 +29,7 @@
       url('../images/hero-img-mobile.jpg');
   }
   @media screen and (min-width: $tablet) {
-    max-width: $tablet;
+    max-width: $preDesktop;
     background-image: linear-gradient(
         to right,
         $hero-linear-gradient 15%,
@@ -56,11 +65,6 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  // @media screen and (min-width: $mobile) {
-  //   font-size: 44px;
-  //   line-height: 1.36;
-  //   max-width: 696px;
-  // }
   @media screen and (min-width: $desktop) {
     font-size: 44px;
     line-height: 1.36;

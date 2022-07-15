@@ -1,17 +1,30 @@
 .main-nav {
-  @include displayFlex($mainAlign: space-between);
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: $preTablet) {
+    width: $mobile;
+  }
+
+  @media screen and (max-width: $preDesktop) {
+    justify-content: space-between;
+  }
 }
 
 // блок навігації посилань
 
 .page-nav {
   @media screen and (max-width: $preTablet) {
-    display: none;
+    display: block;
+    margin-bottom: 302px;
+
+    &__item:not(:last-child) {
+      margin-bottom: 32px;
+    }
   }
 
   @media screen and (min-width: $tablet) {
     display: flex;
-
     &__item:not(:first-child) {
       margin-left: 50px;
     }
@@ -23,17 +36,11 @@
 }
 
 .page-nav__link {
-  display: flex;
-  align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.14;
 
   color: $second-font-color;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-
   transition-property: color;
   transition-duration: $animation-duration;
   transition-timing-function: $animation-function;
@@ -42,6 +49,24 @@
   &:focus {
     color: $accent-color;
   }
+
+  @media screen and (max-width: $preTablet) {
+    display: block;
+    font-size: 40px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .page-nav__link--current {
@@ -49,12 +74,14 @@
   color: $accent-color;
 
   &::after {
-    position: absolute;
-    bottom: 0;
-    content: '';
-    width: 100%;
-    height: 4px;
-    border-radius: $primary-border-radius;
-    background-color: $accent-color;
+    @media screen and (min-width: $tablet) {
+      position: absolute;
+      bottom: 0;
+      content: '';
+      width: 100%;
+      height: 4px;
+      border-radius: $primary-border-radius;
+      background-color: $accent-color;
+    }
   }
 }

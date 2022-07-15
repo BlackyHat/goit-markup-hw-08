@@ -90,10 +90,14 @@
   position: relative;
   padding-left: 24px;
   margin-bottom: 30px;
-
-  font-size: 14px;
+  font-size: 12px;
   letter-spacing: 0.03em;
-  line-height: 1.7143;
+  line-height: 1.1667;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+    line-height: 1.7143;
+  }
 }
 
 .form__link {

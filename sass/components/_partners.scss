@@ -2,44 +2,46 @@
 .partners {
   display: flex;
   justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
+  margin: -15px;
 
-  &__item:not(:first-child) {
-    margin-left: 30px;
+  @media screen and (max-width: $preDesktop) {
+    flex-wrap: wrap;
   }
 
-  &__item {
+  &__link {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 92px;
 
-    @media screen and (min-width: $mobile) {
-      width: calc((100% - 2 * 30px) / 2);
-    }
+    border: 1px solid rgb(175, 177, 184);
+    border-radius: 4px;
+    color: $social-buttons-color;
 
-    @media screen and (min-width: $tablet) {
-      width: calc((100% - 3 * 30px) / 3);
-    }
-    @media screen and (min-width: $desktop) {
-      width: calc((100% - 6 * 30px) / 6);
-    }
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  border: 1px solid rgb(175, 177, 184);
-  border-radius: 4px;
-  color: $social-buttons-color;
 
-  transition-property: color, background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-  &__item:hover,
-  &__item:focus {
+  &__link:hover,
+  &__link:focus {
     color: $accent-color;
     border: 1px solid $accent-color;
   }
 
   &__logo {
     fill: currentColor;
+  }
+}
+
+.partners__item {
+  margin: 15px;
+  width: 210px;
+
+  @media screen and (min-width: $mobile) {
+    width: calc((100% - 2 * 30px) / 2);
+  }
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 3 * 30px) / 3);
   }
 }

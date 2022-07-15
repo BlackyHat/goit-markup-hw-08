@@ -1,10 +1,11 @@
 @import './utils/breakpoints';
-@import './utils/_variables';
+@import './utils/variables';
 @import './base/normalize';
 @import './utils/placeholders';
 @import './utils/mixins';
 @import './components/body';
 @import './components/page-header';
+@import './components/menu-mobile';
 @import './components/logo';
 @import './components/main-nav__button';
 @import './components/page-nav';

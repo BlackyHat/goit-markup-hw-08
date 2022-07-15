@@ -2,29 +2,62 @@
 
 .contacts {
   @media screen and (max-width: 767px) {
-    display: none;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 32px;
+
+    &__icon-mail,
+    &__icon-phone {
+      display: none;
+    }
+
+    &__item {
+      margin-bottom: 32px;
+
+      &:first-child {
+        font-size: 24px;
+      }
+      &:last-child {
+        font-size: 34px;
+      }
+    }
   }
 
   @media screen and (min-width: $tablet) {
-    display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
 
     &__icon-mail {
       margin-right: 10px;
       fill: currentColor;
+      width: 14px;
+      height: 10px;
     }
 
     &__icon-phone {
       margin-right: 10px;
       fill: currentColor;
+      width: 10px;
+      height: 14px;
     }
   }
 
   @media screen and (min-width: $desktop) {
+    display: flex;
+
     margin-left: auto;
     flex-direction: row;
     align-items: center;
+
+    &__icon-mail {
+      width: 16px;
+      height: 12px;
+    }
+
+    &__icon-phone {
+      width: 10px;
+      height: 16px;
+    }
   }
 }
 
@@ -33,37 +66,37 @@
     margin-top: 10px;
   }
   @media screen and (min-width: $desktop) {
-    margin-left: 50px;
+    margin-left: 30px;
     margin-top: 0;
   }
 }
 
 .contacts__link {
   color: $primary-text-color;
+  font-size: inherit;
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-
   transition-property: color;
   transition-duration: $animation-duration;
   transition-timing-function: $animation-function;
 
+  @media screen and (min-width: $tablet) and (max-width: $preDesktop) {
+    display: flex;
+    font-size: 12px;
+    margin-left: 84px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-size: 14px;
+  }
+
   &:hover,
   &:focus {
     color: $accent-color;
-    @media screen and (min-width: $tablet) {
-      :first-child {
-        margin-bottom: 10px;
-      }
-    }
-
-    @media screen and (min-width: $desktop) {
-      display: flex;
-      align-items: center;
-      padding-top: 32px;
-      padding-bottom: 32px;
-    }
   }
 }
 
