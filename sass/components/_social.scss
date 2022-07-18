@@ -1,3 +1,22 @@
+// Mobile menu bottom social chapter
+
+.menu-social {
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (min-width: $mobile) and (max-width: $preTablet) {
+    &__link {
+      line-height: 1.2222;
+      font-weight: 500;
+      font-size: 18px;
+      color: $accent-color;
+    }
+  }
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+
 .social {
   @include displayFlex();
 
