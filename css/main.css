@@ -745,7 +745,7 @@ img {
   display: flex;
   justify-content: space-between;
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .menu-social__link {
     line-height: 1.2222;
     font-weight: 500;
