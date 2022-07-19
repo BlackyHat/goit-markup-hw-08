@@ -19,7 +19,7 @@
   background-position: center;
 
   @media screen and (min-width: $mobile) {
-    max-width: $preTablet;
+    min-width: $mobile;
     background-image: linear-gradient(
         to right,
         $hero-linear-gradient 15%,
@@ -28,7 +28,7 @@
       url('../images/hero-img-mobile.jpg');
   }
   @media screen and (min-width: $tablet) {
-    max-width: $preDesktop;
+    min-width: $tablet;
     background-image: linear-gradient(
         to right,
         $hero-linear-gradient 15%,
@@ -37,7 +37,7 @@
       url('../images/hero-img-tablet.jpg');
   }
   @media screen and (min-width: $desktop) {
-    max-width: 1600px;
+    min-width: $desktop;
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: linear-gradient(
