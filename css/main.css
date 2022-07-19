@@ -278,6 +278,7 @@ summary {
 }
 
 body {
+  min-width: 320px;
   margin-right: auto;
   margin-left: auto;
   background-color: #ffffff;
@@ -426,6 +427,7 @@ img {
   .menu-container.is-open {
     display: flex;
     flex-direction: column;
+    overflow-y: scroll;
   }
 }
 @media screen and (min-width: 768px) {
@@ -809,7 +811,6 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
-  min-width: 320px;
 }
 @media screen and (min-width: 480px) {
   .footer {
@@ -1159,6 +1160,7 @@ img {
   height: 100%;
   overflow-y: scroll;
 }
+
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;

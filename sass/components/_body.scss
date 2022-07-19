@@ -1,4 +1,5 @@
 body {
+  min-width: $baseScreen;
   @include marginAuto();
   background-color: $primary-white-color;
   color: $primary-text-color;
