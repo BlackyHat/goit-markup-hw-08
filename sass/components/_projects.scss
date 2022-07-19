@@ -7,9 +7,6 @@
 }
 
 .project__item {
-  min-width: $baseScreen;
-  min-width: 290px;
-
   @media screen and (min-width: $mobile) {
     width: 450px;
   }

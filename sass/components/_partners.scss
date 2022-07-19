@@ -36,12 +36,8 @@
 
 .partners__item {
   margin: 15px;
-
   width: calc((100% - 2 * 30px) / 2);
 
-  // @media screen and (min-width: $mobile) {
-  //   width: calc((100% - 2 * 30px) / 2);
-  // }
   @media screen and (min-width: $tablet) {
     width: calc((100% - 3 * 30px) / 3);
   }

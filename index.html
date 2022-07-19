@@ -5,6 +5,8 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="./css/main.min.css" />
@@ -71,71 +73,72 @@
   <!--Основний розділ-->
   <main>
     <!--Заголовок з кнопкою-->
-    <section class="section hero">
-      <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-      <button type="button" class="hero__button" data-modal-open>Заказать услугу</button>
-      <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-          <button type="button" class="modal__close-button" data-modal-close>
-            <svg class="modal__close-icon" width="11" height="11">
-              <use href="./images/icons.svg#icon-close"></use>
-            </svg>
-          </button>
-
-          <form role="group" class="form" autocomplete="off">
-            <p class="form__title">Оставьте свои данные, мы вам перезвоним</p>
-            <div class="form__input-area">
-              <label class="form__label" for="modal-name">Имя</label>
-              <div class="form__input-area">
-
-                <input class="form__input" type="text" name="name" id="modal-name">
-                <svg class="form__icon" width="12" height="12">
-                  <use href="./images/icons.svg#modal-icon-man"></use>
-                </svg>
-              </div>
-            </div>
-            <div class="form__input-area">
-              <label class="form__label" for="modal-tel">Телефон</label>
-              <div class="form__input-area">
-
-                <input class="form__input" type="tel" name="tel" id="modal-tel">
-                <svg class="form__icon" width="13" height="13">
-                  <use href="./images/icons.svg#modal-icon-tel"></use>
-                </svg>
-              </div>
-            </div>
-            <div class="form__input-area">
-              <label class="form__label" for="modal-mail">Почта</label>
-              <div class="form__input-area">
-                <input class="form__input" type="email" name="email" id="modal-mail">
-                <svg class="form__icon" height="12" width="20">
-                  <use href="./images/icons.svg#modal-icon-envelope"></use>
-                </svg>
-              </div>
-            </div>
-            <div class="form__feedback">
-              <label class="form__label" for="modal-feedback">
-                Комментарий</label>
-              <textarea class="form__textarea" id="modal-feedback" name="feedback" rows="5"
-                placeholder="Введите текст"></textarea>
-            </div>
-
-            <label class="form__label-agree" for="modal-label-agree">Соглашаюсь с
-              рассылкой и принимаю <a class="form__link link" href="#">Условия договора</a>
-              <input type="checkbox" class="form__checkbox visually-hidden" name="modal-agree" id="modal-label-agree"
-                required>
-              <svg class="form__unchecked-icon" width="16" height="15">
-                <use href="./images/icons.svg#icon-unchecked"></use>
+    <section class="section section--no-padding section-hero">
+      <div class="container hero">
+        <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+        <button type="button" class="hero__button" data-modal-open>Заказать услугу</button>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <button type="button" class="modal__close-button" data-modal-close>
+              <svg class="modal__close-icon" width="11" height="11">
+                <use href="./images/icons.svg#icon-close"></use>
               </svg>
-              <svg class="form__checked-icon" width="16" height="15">
-                <use href="./images/icons.svg#icon-checked"></use>
-              </svg>
-            </label>
-            <button type="submit" class="modal__button">Отправить</button>
-          </form>
+            </button>
 
+            <form role="group" class="form" autocomplete="off">
+              <p class="form__title">Оставьте свои данные, мы вам перезвоним</p>
+              <div class="form__input-area">
+                <label class="form__label" for="modal-name">Имя</label>
+                <div class="form__input-area">
+
+                  <input class="form__input" type="text" name="name" id="modal-name">
+                  <svg class="form__icon" width="12" height="12">
+                    <use href="./images/icons.svg#modal-icon-man"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="form__input-area">
+                <label class="form__label" for="modal-tel">Телефон</label>
+                <div class="form__input-area">
+
+                  <input class="form__input" type="tel" name="tel" id="modal-tel">
+                  <svg class="form__icon" width="13" height="13">
+                    <use href="./images/icons.svg#modal-icon-tel"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="form__input-area">
+                <label class="form__label" for="modal-mail">Почта</label>
+                <div class="form__input-area">
+                  <input class="form__input" type="email" name="email" id="modal-mail">
+                  <svg class="form__icon" height="12" width="20">
+                    <use href="./images/icons.svg#modal-icon-envelope"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="form__feedback">
+                <label class="form__label" for="modal-feedback">
+                  Комментарий</label>
+                <textarea class="form__textarea" id="modal-feedback" name="feedback" rows="5"
+                  placeholder="Введите текст"></textarea>
+              </div>
+
+              <label class="form__label-agree" for="modal-label-agree">Соглашаюсь с
+                рассылкой и принимаю <a class="form__link link" href="#">Условия договора</a>
+                <input type="checkbox" class="form__checkbox visually-hidden" name="modal-agree" id="modal-label-agree"
+                  required>
+                <svg class="form__unchecked-icon" width="16" height="15">
+                  <use href="./images/icons.svg#icon-unchecked"></use>
+                </svg>
+                <svg class="form__checked-icon" width="16" height="15">
+                  <use href="./images/icons.svg#icon-checked"></use>
+                </svg>
+              </label>
+              <button type="submit" class="modal__button">Отправить</button>
+            </form>
+
+          </div>
         </div>
-      </div>
       </div>
     </section>
     <!--Особливості роботи команди-->
@@ -195,20 +198,23 @@
       </div>
     </section>
     <!-- Чим ми займаємося -->
-    <section class="section section__no-padding-top section__work-examples">
+    <section class="section section--no-padding-top section__work-examples">
       <div class="container">
         <h2 class="section__title">Чем мы занимаемся</h2>
         <ul class="work-examples list">
           <li class="work-examples__item">
-            <img src="images/img1.jpg" alt="Пример нашей работы 1" width="370" />
+            <img srcset="./images/work-examples_img_1_@1x.jpg 1x, ./images/work-examples_img_1_@2x.jpg 2x"
+              src="./images/work-examples_img_1_@1x.jpg" alt="Пример нашей работы 1" width="370" />
             <span class="work-examples__label">Десктопные приложения</span>
           </li>
           <li class="work-examples__item">
-            <img src="images/img2.jpg" alt="Пример нашей работы 2" width="370" />
+            <img srcset="./images/work-examples_img_2_@1x.jpg 1x, ./images/work-examples_img_2_@2x.jpg 2x"
+              src="./images/work-examples_img_2_@1x.jpg" alt="Пример нашей работы 2" width="370" />
             <span class="work-examples__label">Мобильные приложения</span>
           </li>
           <li class="work-examples__item">
-            <img src="images/img3.jpg" alt="Пример нашей работы 3" width="370" />
+            <img srcset="./images/work-examples_img_3_@1x.jpg 1x, ./images/work-examples_img_3_@2x.jpg 2x"
+              src="./images/work-examples_img_3_@1x.jpg" alt="Пример нашей работы 3" width="370" />
             <span class="work-examples__label">Дизайнерские решения</span>
           </li>
         </ul>
@@ -220,7 +226,8 @@
         <h2 class="section__title">Наша команда</h2>
         <ul class="worker-list list">
           <li class="worker-list__item">
-            <img class="worker-list__img" src="images/img4.jpg" alt="Фото Игорь Демьяненко" width="270" />
+            <img class="worker-list__img" srcset="./images/img_team_1_@1x.jpg 1x, ./images/img_team_1_@2x.jpg 2x"
+              src="./images/img_team_1_@1x.jpg" alt="Фото Игорь Демьяненко" width="270" />
             <div class="worker-list__info">
               <h3 class="worker-list__title">Игорь Демьяненко</h3>
               <p class="worker-list__position">Product Designer</p>
@@ -248,7 +255,8 @@
             </div>
           </li>
           <li class="worker-list__item">
-            <img class="worker-list__img" src="images/img5.jpg" alt="Фото Ольга Репина" width="270" />
+            <img class="worker-list__img" srcset="./images/img_team_2_@1x.jpg 1x, ./images/img_team_2_@2x.jpg 2x"
+              src="./images/img_team_2_@1x.jpg" alt="Фото Ольга Репина" width="270" />
             <div class="worker-list__info">
               <h3 class="worker-list__title">Ольга Репина</h3>
               <p class="worker-list__position">Frontend Developer</p>
@@ -276,7 +284,8 @@
             </div>
           </li>
           <li class="worker-list__item">
-            <img class="worker-list__img" src="images/img6.jpg" alt="Фото Николай Тарасов" width="270" />
+            <img class="worker-list__img" srcset="./images/img_team_3_@1x.jpg 1x, ./images/img_team_3_@2x.jpg 2x"
+              src="./images/img_team_3_@1x.jpg" alt="Фото Николай Тарасов" width="270" />
             <div class="worker-list__info">
               <h3 class="worker-list__title">Николай Тарасов</h3>
               <p class="worker-list__position">Marketing</p>
@@ -304,7 +313,8 @@
             </div>
           </li>
           <li class="worker-list__item">
-            <img class="worker-list__img" src="images/img7.jpg" alt="Фото Михаил Ермаков" width="270" />
+            <img class="worker-list__img" srcset="./images/img_team_4_@1x.jpg 1x, ./images/img_team_4_@2x.jpg 2x"
+              src="./images/img_team_4_@1x.jpg" alt="Фото Михаил Ермаков" width="270" />
             <div class="worker-list__info">
               <h3 class="worker-list__title">Михаил Ермаков</h3>
               <p class="worker-list__position">UI Designer</p>
@@ -425,7 +435,7 @@
   </footer>
   <script src="./js/header.js"></script>
   <script src="./js/modal.js"></script>
-  <script src="./js/menu.js"></script>
+  <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

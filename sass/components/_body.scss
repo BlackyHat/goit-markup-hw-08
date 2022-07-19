@@ -37,18 +37,17 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   text-align: center;
-  min-width: $baseScreen;
 
   @media screen and (min-width: $mobile) {
-    max-width: 480px;
+    max-width: $mobile;
   }
 
   @media screen and (min-width: $tablet) {
-    max-width: 768px;
+    max-width: $tablet;
   }
 
   @media screen and (min-width: $desktop) {
-    max-width: 1200px;
+    max-width: $desktop;
   }
 }
 
@@ -61,8 +60,13 @@ img {
     padding-bottom: $section-paddings-desktop;
   }
 
-  &__no-padding-top {
+  &--no-padding-top {
     padding-top: 0;
+  }
+
+  &--no-padding {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   &__title {
