@@ -2,7 +2,18 @@
 
 .team {
   background-color: $secondary-section-background;
-  min-width: 480px;
+  min-width: $baseScreen;
+
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+  }
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+  }
 }
 
 .worker-list {
@@ -18,7 +29,11 @@
 
   &__item {
     margin: 15px;
-    width: 450px;
+    min-width: 290px;
+
+    @media screen and (min-width: $mobile) {
+      width: 450px;
+    }
 
     @media screen and (min-width: $tablet) {
       width: calc((100% - 2 * 30px) / 2);

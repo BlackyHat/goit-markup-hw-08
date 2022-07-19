@@ -1,13 +1,21 @@
 .form {
-  padding: 40px 40px;
+  padding: 30px 30px;
+
+  @media screen and (min-width: $mobile) {
+    padding: 40px 40px;
+  }
 
   &__title {
     font-weight: 700;
-    font-size: 20px;
     line-height: 1.15;
     letter-spacing: 0.03em;
     color: $second-font-color;
     margin-bottom: 12px;
+    font-size: 16px;
+
+    @media screen and (min-width: $mobile) {
+      font-size: 20px;
+    }
   }
 
   &__label {
@@ -108,21 +116,26 @@
 .form__unchecked-icon {
   position: absolute;
 
-  transform: translateY(-50%);
-  top: 50%;
   left: 0;
   opacity: 1;
 
   fill: $bg-grey-color;
 
   border-radius: 2px;
+
+  @media screen and (min-width: $baseScreen) and (max-width: $preMobile) {
+    top: 0;
+  }
+
+  @media screen and (min-width: $mobile) {
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 
 .form__checked-icon {
   position: absolute;
-  top: 50%;
   left: 0;
-  transform: translateY(-50%);
 
   opacity: 0;
 
@@ -133,6 +146,15 @@
   transition-property: opacity;
   transition-duration: $animation-duration;
   transition-timing-function: $animation-function;
+
+  @media screen and (min-width: $baseScreen) and (max-width: $preMobile) {
+    top: 0;
+  }
+
+  @media screen and (min-width: $mobile) {
+    top: 50%;
+    transform: translateY(-50%);
+  }
 
   .form__checkbox:checked ~ & {
     opacity: 1;

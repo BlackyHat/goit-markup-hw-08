@@ -1,7 +1,7 @@
 /* СЕКЦІЯ ГЕРОЙ */
 
 .hero {
-  min-width: 480px;
+  min-width: $baseScreen;
   background-image: linear-gradient(
       to right,
       $hero-linear-gradient 15%,
@@ -10,7 +10,6 @@
     url('../images/hero-img-mobile.jpg');
 
   text-align: center;
-
   margin-right: auto;
   margin-left: auto;
   padding-top: 118px;

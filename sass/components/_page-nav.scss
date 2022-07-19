@@ -1,8 +1,8 @@
 .main-nav {
   display: flex;
   align-items: center;
-
-  @media screen and (max-width: $preTablet) {
+  min-width: $baseScreen;
+  @media screen and (min-width: $mobile) and (max-width: $preTablet) {
     width: $mobile;
   }
 

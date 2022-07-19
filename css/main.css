@@ -318,11 +318,7 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   text-align: center;
-}
-@media screen and (max-width: 479px) {
-  .container {
-    width: 480px;
-  }
+  min-width: 320px;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -515,8 +511,9 @@ img {
 .main-nav {
   display: flex;
   align-items: center;
+  min-width: 320px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .main-nav {
     width: 480px;
   }
@@ -805,7 +802,12 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
-  min-width: 480px;
+  min-width: 320px;
+}
+@media screen and (min-width: 480px) {
+  .footer {
+    min-width: 480px;
+  }
 }
 @media screen and (min-width: 768px) {
   .footer {
@@ -1059,7 +1061,7 @@ img {
 }
 /* СЕКЦІЯ ГЕРОЙ */
 .hero {
-  min-width: 480px;
+  min-width: 320px;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 15%, rgba(47, 48, 58, 0.4) 30%), url("../images/hero-img-mobile.jpg");
   text-align: center;
   margin-right: auto;
@@ -1151,7 +1153,12 @@ img {
   transform: translate(-50%, -50%) scale(1, 1);
   transition: transform 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 320px) {
+  .modal {
+    min-width: 320px;
+  }
+}
+@media screen and (min-width: 480px) {
   .modal {
     width: 450px;
   }
@@ -1187,15 +1194,25 @@ img {
 }
 
 .form {
-  padding: 40px 40px;
+  padding: 30px 30px;
+}
+@media screen and (min-width: 480px) {
+  .form {
+    padding: 40px 40px;
+  }
 }
 .form__title {
   font-weight: 700;
-  font-size: 20px;
   line-height: 1.15;
   letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 12px;
+  font-size: 16px;
+}
+@media screen and (min-width: 480px) {
+  .form__title {
+    font-size: 20px;
+  }
 }
 .form__label {
   display: block;
@@ -1302,19 +1319,26 @@ img {
 
 .form__unchecked-icon {
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
   left: 0;
   opacity: 1;
   fill: #2f303a;
   border-radius: 2px;
 }
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .form__unchecked-icon {
+    top: 0;
+  }
+}
+@media screen and (min-width: 480px) {
+  .form__unchecked-icon {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
 
 .form__checked-icon {
   position: absolute;
-  top: 50%;
   left: 0;
-  transform: translateY(-50%);
   opacity: 0;
   fill: #ffffff;
   background-color: rgb(33, 150, 243);
@@ -1322,6 +1346,17 @@ img {
   transition-property: opacity;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .form__checked-icon {
+    top: 0;
+  }
+}
+@media screen and (min-width: 480px) {
+  .form__checked-icon {
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 .form__checkbox:checked ~ .form__checked-icon {
   opacity: 1;
@@ -1355,7 +1390,12 @@ img {
 
 .features__item {
   margin: 15px;
-  width: 450px;
+  min-width: 290px;
+}
+@media screen and (min-width: 480px) {
+  .features__item {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 768px) {
   .features__item {
@@ -1470,7 +1510,22 @@ img {
 /* СЕКЦІЯ ПРО КОМАНДУ */
 .team {
   background-color: #f5f4fa;
-  min-width: 480px;
+  min-width: 320px;
+}
+@media screen and (min-width: 480px) {
+  .team {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    width: 1200px;
+  }
 }
 
 .worker-list {
@@ -1488,10 +1543,15 @@ img {
 }
 .worker-list__item {
   margin: 15px;
-  width: 450px;
+  min-width: 290px;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
+}
+@media screen and (min-width: 480px) {
+  .worker-list__item {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 768px) {
   .worker-list__item {
@@ -1568,12 +1628,7 @@ img {
 
 .partners__item {
   margin: 15px;
-  width: 210px;
-}
-@media screen and (min-width: 480px) {
-  .partners__item {
-    width: calc((100% - 60px) / 2);
-  }
+  width: calc((100% - 60px) / 2);
 }
 @media screen and (min-width: 768px) {
   .partners__item {
@@ -1588,7 +1643,12 @@ img {
   justify-content: flex-start;
   gap: 8px;
   margin-bottom: 40px;
-  min-width: 450px;
+  min-width: 290px;
+}
+@media screen and (min-width: 480px) {
+  .filter {
+    min-width: 450px;
+  }
 }
 @media screen and (min-width: 768px) {
   .filter {
@@ -1631,7 +1691,13 @@ img {
 }
 
 .project__item {
-  width: 450px;
+  min-width: 320px;
+  min-width: 290px;
+}
+@media screen and (min-width: 480px) {
+  .project__item {
+    width: 450px;
+  }
 }
 @media screen and (max-width: 767px) {
   .project__item:not(:last-child) {

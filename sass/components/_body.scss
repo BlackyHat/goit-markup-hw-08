@@ -37,11 +37,7 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   text-align: center;
-
-  // add preMobile for display smaller than 480px and some section keep own normal visabilyty
-  @media screen and (max-width: $preMobile) {
-    width: 480px;
-  }
+  min-width: $baseScreen;
 
   @media screen and (min-width: $mobile) {
     max-width: 480px;

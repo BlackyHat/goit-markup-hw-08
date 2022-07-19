@@ -1,7 +1,4 @@
 .project {
-  @media screen and (max-width: $preTablet) {
-  }
-
   @media screen and (min-width: $tablet) {
     display: flex;
     margin: -15px;
@@ -10,7 +7,12 @@
 }
 
 .project__item {
-  width: 450px;
+  min-width: $baseScreen;
+  min-width: 290px;
+
+  @media screen and (min-width: $mobile) {
+    width: 450px;
+  }
 
   &:not(:last-child) {
     @media screen and (max-width: $preTablet) {
