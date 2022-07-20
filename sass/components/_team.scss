@@ -2,25 +2,12 @@
 
 .team {
   background-color: $secondary-section-background;
-
-  // @media screen and (min-width: $mobile) {
-  //   min-width: $mobile;
-  // }
-  // @media screen and (min-width: $tablet) {
-  //   min-width: $tablet;
-  // }
-
-  // @media screen and (min-width: $desktop) {
-  //   min-width: $desktop;
-  // }
 }
 
 .worker-list {
+  display: flex;
+  justify-content: center;
   margin: -15px;
-
-  @media screen and (min-width: $tablet) {
-    display: flex;
-  }
 
   @media screen and (max-width: $preDesktop) {
     flex-wrap: wrap;
@@ -82,13 +69,11 @@
 
   padding-top: 30px;
   padding-bottom: 30px;
-
   background-color: $primary-white-color;
 }
 
 .worker-list__title {
   margin-bottom: 10px;
-
   color: $second-font-color;
   font-weight: 500;
   font-size: 16px;
@@ -98,7 +83,6 @@
 
 .worker-list__position {
   margin-bottom: 16px;
-
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;

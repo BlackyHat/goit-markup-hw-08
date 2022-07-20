@@ -409,7 +409,6 @@ img {
 }
 
 .menu-container {
-  display: none;
   background-color: #ffffff;
 }
 @media screen and (max-width: 767px) {
@@ -419,7 +418,7 @@ img {
     top: 0;
     left: 0;
     width: 100%;
-    height: 768px;
+    height: 100vh;
     z-index: 1;
     padding: 48px 40px;
     text-align: left;
@@ -427,6 +426,7 @@ img {
   .menu-container.is-open {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     overflow-y: scroll;
   }
 }
@@ -434,12 +434,11 @@ img {
   .menu-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
   }
 }
 @media screen and (min-width: 1200px) {
   .menu-container {
-    gap: 305px;
+    width: 100%;
     height: 80px;
   }
 }
@@ -536,7 +535,6 @@ img {
 @media screen and (max-width: 767px) {
   .page-nav {
     display: block;
-    margin-bottom: 302px;
   }
   .page-nav__item:not(:last-child) {
     margin-bottom: 32px;
@@ -1403,12 +1401,8 @@ img {
 
 /* СЕКЦІЯ ОСОБЛИВОСТІ */
 .features {
+  display: flex;
   margin: -15px;
-}
-@media screen and (min-width: 768px) {
-  .features {
-    display: flex;
-  }
 }
 @media screen and (max-width: 1199px) {
   .features {
@@ -1448,7 +1442,6 @@ img {
 
 .features__title {
   margin-bottom: 10px;
-  display: inline-block;
   color: #212121;
   font-weight: 700;
   font-size: 14px;
@@ -1456,7 +1449,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .features__title {
     text-align: left;
   }
@@ -1541,12 +1534,9 @@ img {
 }
 
 .worker-list {
+  display: flex;
+  justify-content: center;
   margin: -15px;
-}
-@media screen and (min-width: 768px) {
-  .worker-list {
-    display: flex;
-  }
 }
 @media screen and (max-width: 1199px) {
   .worker-list {
@@ -1666,9 +1656,6 @@ img {
     justify-content: center;
     flex-wrap: nowrap;
     margin-bottom: 30px;
-  }
-  .filter__item:not(:first-child) {
-    margin-left: 8px;
   }
 }
 @media screen and (min-width: 1200px) {

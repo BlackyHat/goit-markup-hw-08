@@ -19,7 +19,7 @@
 .page-nav {
   @media screen and (max-width: $preTablet) {
     display: block;
-    margin-bottom: 302px;
+    // margin-bottom: 302px;
 
     &__item:not(:last-child) {
       margin-bottom: 32px;

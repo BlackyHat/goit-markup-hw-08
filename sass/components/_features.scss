@@ -1,11 +1,8 @@
 /* СЕКЦІЯ ОСОБЛИВОСТІ */
 
 .features {
+  display: flex;
   margin: -15px;
-
-  @media screen and (min-width: $tablet) {
-    display: flex;
-  }
 
   @media screen and (max-width: $preDesktop) {
     flex-wrap: wrap;
@@ -65,7 +62,6 @@
 
 .features__title {
   margin-bottom: 10px;
-  display: inline-block;
   color: $second-font-color;
   font-weight: 700;
   font-size: 14px;
@@ -73,7 +69,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: $tablet) {
     text-align: left;
   }
 }
