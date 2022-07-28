@@ -255,8 +255,23 @@
             </div>
           </li>
           <li class="worker-list__item">
-            <img class="worker-list__img" srcset="./images/img_team_2_@1x.jpg 1x, ./images/img_team_2_@2x.jpg 2x"
-              src="./images/img_team_2_@1x.jpg" alt="Фото Ольга Репина" width="270" />
+            <picture>
+              <source srcset="./images/img_team_2_mobile_@1x.webp 1x, ./images/img_team_2_mobile_@2x.webp 2x"
+                type="image/webp" media="max-width: 767px">
+              <source srcset="./images/img_team_2_mobile_@1x.jpg 1x, img_team_2_mobile_@2x.jpg 2x" type="image/jpeg"
+                media="max-width: 767px">
+              <source srcset="./images/img_team_2_tablet_@1x.webp 1x, ./images/img_team_2_tablet_@2x.webp 2x"
+                type="image/webp" media="max-width: 1199px">
+              <source srcset="./images/img_team_2_tablet_@1x.jpg 1x, ./images/img_team_2_tablet_@2x.jpg 2x"
+                type="image/jpeg" media="max-width: 1199px">
+              <source srcset="./images/img_team_2_@1x.jpg 1x, ./images/img_team_2_@2x.jpg 2x" type="image/webp"
+                media="min-width: 1200px">
+              <source srcset="./images/img_team_2_@1x.jpg 1x, ./images/img_team_2_@2x.jpg 2x" type="image/jpeg"
+                media="min-width: 1200px">
+
+              <img class="worker-list__img" src="./images/img_team_2_@1x.jpg" alt="Фото Ольга Репина" width="270" />
+
+            </picture>
             <div class="worker-list__info">
               <h3 class="worker-list__title">Ольга Репина</h3>
               <p class="worker-list__position">Frontend Developer</p>

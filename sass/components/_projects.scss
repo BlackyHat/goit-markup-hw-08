@@ -42,8 +42,15 @@
   }
 }
 
-.project__image {
+.project__thumb {
+  height: 294px;
   width: 100%;
+}
+
+.project__image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .project__label {
