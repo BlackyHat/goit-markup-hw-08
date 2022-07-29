@@ -203,18 +203,44 @@
         <h2 class="section__title">Чем мы занимаемся</h2>
         <ul class="work-examples list">
           <li class="work-examples__item">
-            <img srcset="./images/work-examples_img_1_@1x.jpg 1x, ./images/work-examples_img_1_@2x.jpg 2x"
-              src="./images/work-examples_img_1_@1x.jpg" alt="Пример нашей работы 1" width="370" />
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="./images/work-examples_img_1_@1x.webp 1x, ./images/work-examples_img_1_@2x.webp 2x"
+                type="image/webp" />
+              <source media="(min-width: 1200px)"
+                srcset="./images/work-examples_img_1_@1x.jpg 1x, ./images/work-examples_img_1_@2x.jpg 2x"
+                type="image/jpeg" />
+              <img src="./images/work-examples_img_1_@1x.jpg" alt="Пример нашей работы 1" width="370" />
+
+            </picture>
             <span class="work-examples__label">Десктопные приложения</span>
           </li>
           <li class="work-examples__item">
-            <img srcset="./images/work-examples_img_2_@1x.jpg 1x, ./images/work-examples_img_2_@2x.jpg 2x"
-              src="./images/work-examples_img_2_@1x.jpg" alt="Пример нашей работы 2" width="370" />
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="./images/work-examples_img_2_@1x.webp 1x, ./images/work-examples_img_2_@2x.webp 2x"
+                type="image/webp" />
+              <source media="(min-width: 1200px)"
+                srcset="./images/work-examples_img_2_@1x.jpg 1x, ./images/work-examples_img_2_@2x.jpg 2x"
+                type="image/jpeg" />
+              <img src="./images/work-examples_img_2_@1x.jpg" alt="Пример нашей работы 2" width="370" />
+
+            </picture>
+
             <span class="work-examples__label">Мобильные приложения</span>
           </li>
           <li class="work-examples__item">
-            <img srcset="./images/work-examples_img_3_@1x.jpg 1x, ./images/work-examples_img_3_@2x.jpg 2x"
-              src="./images/work-examples_img_3_@1x.jpg" alt="Пример нашей работы 3" width="370" />
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="./images/work-examples_img_3_@1x.webp 1x, ./images/work-examples_img_3_@2x.webp 2x"
+                type="image/webp" />
+              <source media="(min-width: 1200px)"
+                srcset="./images/work-examples_img_3_@1x.jpg 1x, ./images/work-examples_img_3_@2x.jpg 2x"
+                type="image/jpeg" />
+              <img src="./images/work-examples_img_3_@1x.jpg" alt="Пример нашей работы 3" width="370" />
+
+            </picture>
+
             <span class="work-examples__label">Дизайнерские решения</span>
           </li>
         </ul>
@@ -226,8 +252,30 @@
         <h2 class="section__title">Наша команда</h2>
         <ul class="worker-list list">
           <li class="worker-list__item">
-            <img class="worker-list__img" srcset="./images/img_team_1_@1x.jpg 1x, ./images/img_team_1_@2x.jpg 2x"
-              src="./images/img_team_1_@1x.jpg" alt="Фото Игорь Демьяненко" width="270" />
+            <picture>
+              <source media="(max-width: 767px)"
+                srcset="./images/img_team_1_mobile_@1x.webp 1x, ./images/img_team_1_mobile_@2x.webp 2x"
+                type="image/webp" />
+              <source media="(max-width: 767px)"
+                srcset="./images/img_team_1_mobile_@1x.jpg 1x, img_team_1_mobile_@2x.jpg 2x" type="image/jpeg" />
+              <source media="(max-width: 1199px)"
+                srcset="./images/img_team_1_tablet_@1x.webp 1x, ./images/img_team_1_tablet_@2x.webp 2x"
+                type="image/webp" />
+              <source media="(max-width: 1199px)"
+                srcset="./images/img_team_1_tablet_@1x.jpg 1x, ./images/img_team_1_tablet_@2x.jpg 2x"
+                type="image/jpeg" />
+              <source media="(min-width: 1200px)"
+                srcset="./images/img_team_1_desktop_@1x.webp 1x, ./images/img_team_1_desktop_@2x.webp 2x"
+                type="image/webp" />
+              <source media="(min-width: 1200px)"
+                srcset="./images/img_team_1_desktop_@1x.jpg 1x, ./images/img_team_1_desktop_@2x.jpg 2x"
+                type="image/jpeg" />
+
+              <img class="worker-list__img" src="./images/img_team_1_desktop_@1x.jpg" alt="Фото Игорь Демьяненко"
+                width="270" />
+
+            </picture>
+
             <div class="worker-list__info">
               <h3 class="worker-list__title">Игорь Демьяненко</h3>
               <p class="worker-list__position">Product Designer</p>
@@ -256,20 +304,26 @@
           </li>
           <li class="worker-list__item">
             <picture>
-              <source srcset="./images/img_team_2_mobile_@1x.webp 1x, ./images/img_team_2_mobile_@2x.webp 2x"
-                type="image/webp" media="max-width: 767px">
-              <source srcset="./images/img_team_2_mobile_@1x.jpg 1x, img_team_2_mobile_@2x.jpg 2x" type="image/jpeg"
-                media="max-width: 767px">
-              <source srcset="./images/img_team_2_tablet_@1x.webp 1x, ./images/img_team_2_tablet_@2x.webp 2x"
-                type="image/webp" media="max-width: 1199px">
-              <source srcset="./images/img_team_2_tablet_@1x.jpg 1x, ./images/img_team_2_tablet_@2x.jpg 2x"
-                type="image/jpeg" media="max-width: 1199px">
-              <source srcset="./images/img_team_2_@1x.jpg 1x, ./images/img_team_2_@2x.jpg 2x" type="image/webp"
-                media="min-width: 1200px">
-              <source srcset="./images/img_team_2_@1x.jpg 1x, ./images/img_team_2_@2x.jpg 2x" type="image/jpeg"
-                media="min-width: 1200px">
+              <source media="(max-width: 767px)"
+                srcset="./images/img_team_2_mobile_@1x.webp 1x, ./images/img_team_2_mobile_@2x.webp 2x"
+                type="image/webp" />
+              <source media="(max-width: 767px)"
+                srcset="./images/img_team_2_mobile_@1x.jpg 1x, img_team_2_mobile_@2x.jpg 2x" type="image/jpeg" />
+              <source media="(max-width: 1199px)"
+                srcset="./images/img_team_2_tablet_@1x.webp 1x, ./images/img_team_2_tablet_@2x.webp 2x"
+                type="image/webp" />
+              <source media="(max-width: 1199px)"
+                srcset="./images/img_team_2_tablet_@1x.jpg 1x, ./images/img_team_2_tablet_@2x.jpg 2x"
+                type="image/jpeg" />
+              <source media="(min-width: 1200px)"
+                srcset="./images/img_team_2_desktop_@1x.webp 1x, ./images/img_team_2_desktop_@2x.webp 2x"
+                type="image/webp" />
+              <source media="(min-width: 1200px)"
+                srcset="./images/img_team_2_desktop_@1x.jpg 1x, ./images/img_team_2_desktop_@2x.jpg 2x"
+                type="image/jpeg" />
 
-              <img class="worker-list__img" src="./images/img_team_2_@1x.jpg" alt="Фото Ольга Репина" width="270" />
+              <img class="worker-list__img" src="./images/img_team_2_desktop_@1x.jpg" alt="Фото Ольга Репина"
+                width="270" />
 
             </picture>
             <div class="worker-list__info">
@@ -299,8 +353,28 @@
             </div>
           </li>
           <li class="worker-list__item">
-            <img class="worker-list__img" srcset="./images/img_team_3_@1x.jpg 1x, ./images/img_team_3_@2x.jpg 2x"
-              src="./images/img_team_3_@1x.jpg" alt="Фото Николай Тарасов" width="270" />
+            <picture>
+              <source media="(max-width: 767px)"
+                srcset="./images/img_team_3_mobile_@1x.webp 1x, ./images/img_team_3_mobile_@2x.webp 2x"
+                type="image/webp" />
+              <source media="(max-width: 767px)"
+                srcset="./images/img_team_3_mobile_@1x.jpg 1x, img_team_3_mobile_@2x.jpg 2x" type="image/jpeg" />
+              <source media="(max-width: 1199px)"
+                srcset="./images/img_team_3_tablet_@1x.webp 1x, ./images/img_team_3_tablet_@2x.webp 2x"
+                type="image/webp" />
+              <source media="(max-width: 1199px)"
+                srcset="./images/img_team_3_tablet_@1x.jpg 1x, ./images/img_team_3_tablet_@2x.jpg 2x"
+                type="image/jpeg" />
+              <source media="(min-width: 1200px)"
+                srcset="./images/img_team_3_desktop_@1x.webp 1x, ./images/img_team_3_desktop_@2x.webp 2x"
+                type="image/webp" />
+              <source media="(min-width: 1200px)"
+                srcset="./images/img_team_3_desktop_@1x.jpg 1x, ./images/img_team_3_desktop_@2x.jpg 2x"
+                type="image/jpeg" />
+              <img class="worker-list__img" src="./images/img_team_3_desktop_@1x.jpg" alt="Фото Николай Тарасов"
+                width="270" />
+            </picture>
+
             <div class="worker-list__info">
               <h3 class="worker-list__title">Николай Тарасов</h3>
               <p class="worker-list__position">Marketing</p>
@@ -328,8 +402,28 @@
             </div>
           </li>
           <li class="worker-list__item">
-            <img class="worker-list__img" srcset="./images/img_team_4_@1x.jpg 1x, ./images/img_team_4_@2x.jpg 2x"
-              src="./images/img_team_4_@1x.jpg" alt="Фото Михаил Ермаков" width="270" />
+            <picture>
+              <source media="(max-width: 767px)"
+                srcset="./images/img_team_3_mobile_@1x.webp 1x, ./images/img_team_3_mobile_@2x.webp 2x"
+                type="image/webp" />
+              <source media="(max-width: 767px)"
+                srcset="./images/img_team_3_mobile_@1x.jpg 1x, img_team_3_mobile_@2x.jpg 2x" type="image/jpeg" />
+              <source media="(max-width: 1199px)"
+                srcset="./images/img_team_3_tablet_@1x.webp 1x, ./images/img_team_3_tablet_@2x.webp 2x"
+                type="image/webp" />
+              <source media="(max-width: 1199px)"
+                srcset="./images/img_team_3_tablet_@1x.jpg 1x, ./images/img_team_3_tablet_@2x.jpg 2x"
+                type="image/jpeg" />
+              <source media="(min-width: 1200px)"
+                srcset="./images/img_team_3_desktop_@1x.webp 1x, ./images/img_team_3_desktop_@2x.webp 2x"
+                type="image/webp" />
+              <source media="(min-width: 1200px)"
+                srcset="./images/img_team_3_desktop_@1x.jpg 1x, ./images/img_team_3_desktop_@2x.jpg 2x"
+                type="image/jpeg" />
+              <img class="worker-list__img" src="./images/img_team_4_desktop_@1x.jpg" alt="Фото Михаил Ермаков"
+                width="270" />
+            </picture>
+
             <div class="worker-list__info">
               <h3 class="worker-list__title">Михаил Ермаков</h3>
               <p class="worker-list__position">UI Designer</p>

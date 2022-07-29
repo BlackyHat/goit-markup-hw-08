@@ -21,6 +21,7 @@
           <use class="main-nav__icon--open" href="./images/icons.svg#icon-menu"></use>
           <use class="main-nav__icon--close" href="./images/icons.svg#icon-menu-close"></use>
         </svg>
+        <!-- <span class="main-nav__burger-icon"></span> -->
       </button>
 
       <div class="menu-container" id="menu-container" data-menu>
@@ -55,14 +56,14 @@
           </ul>
 
           <ul class="menu-social list">
-            <li class="menu-social__item"><a class="menu-social__link link" href="" aria-label="Инстаграмм">Инстаграмм
+            <li class="menu-social__item"><a class="menu-social__link link" href="" aria-label="Инстаграмм">Інстаграмм
               </a>
             </li>
-            <li class="menu-social__item"><a class="menu-social__link link" href="" aria-label="Твиттер">Твиттер
+            <li class="menu-social__item"><a class="menu-social__link link" href="" aria-label="Твиттер">Твіттер
               </a></li>
             <li class="menu-social__item"><a class="menu-social__link link" href="" aria-label="Фейсбук">Фейсбук
               </a></li>
-            <li class="menu-social__item"><a class="menu-social__link link" href="" aria-label="Линкедин">Линкедин
+            <li class="menu-social__item"><a class="menu-social__link link" href="" aria-label="Линкедин">Лінкедін
               </a>
             </li>
           </ul>
@@ -80,12 +81,12 @@
           </li>
           <li class="filter__item">
             <button type="button" class="filter__button">
-              Веб-сайты
+              Веб-сайти
             </button>
           </li>
           <li class="filter__item">
             <button type="button" class="filter__button">
-              Приложения
+              Додатки
             </button>
           </li>
           <li class="filter__item">
@@ -97,20 +98,23 @@
             </button>
           </li>
         </ul>
-        <h2 class="section__title visually-hidden">Список проектов компании</h2>
+        <h2 class="section__title visually-hidden">Список проєктів компанії</h2>
         <ul class="project list">
           <li class="project__item">
             <a href="" class="project__link link">
 
               <div class="project__thumb">
-                <img srcset="./images/project_1_img@1x.jpg 1x, ./images/project_1_img@2x.jpg 2x"
-                  src="./images/project_1_img@1x.jpg" alt="Изображение сайта Технокряк" class="project__image"
-                  width="370" />
-
+                <picture>
+                  <source srcset="./images/project_1_img@1x.webp 1x, ./images/project_1_img@2x.webp 2x"
+                    type="image/webp" />
+                  <source srcset="./images/project_1_img@1x.jpg 1x, ./images/project_1_img@2x.jpg 2x"
+                    type="image/jpeg" />
+                  <img src=" ./images/project_1_img@1x.jpg" alt="Сайт Технокряк" class="project__image" width="370" />
+                </picture>
                 <p class="project__overlay">
-                  Ресурс предлагает комплексные предложения с разным уровнем
-                  функционала и сервисов. Все это позволит посетителю получить
-                  исчерпывающие сведения о компании или частном лице.
+                  Ресурс пропонує комплексні пропозицї з різним рівнем
+                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                  вичерпну інформацію про компанфю чи приватну особу.
                 </p>
               </div>
               <div class="project__description">
@@ -123,13 +127,19 @@
           <li class="project__item">
             <a href="" class="project__link link">
               <div class="project__thumb">
-                <img srcset="./images/project_2_img@1x.jpg 1x, ./images/project_2_img@2x.jpg 2x"
-                  src="./images/project_2_img@1x.jpg" alt="Изображение постера Нью Орлеан" class="project__image"
-                  width="370" />
+                <picture>
+                  <source srcset="./images/project_2_img@1x.webp 1x, ./images/project_2_img@2x.webp 2x"
+                    type="image/webp" />
+                  <source srcset="./images/project_2_img@1x.jpg 1x, ./images/project_2_img@2x.jpg 2x"
+                    type="image/jpeg" />
+                  <img src="./images/project_2_img@1x.jpg" alt="Постер Нью Орлеан" class="project__image" width="370" />
+                </picture>
+
                 <p class="project__overlay">
-                  Ресурс предлагает комплексные предложения с разным уровнем
-                  функционала и сервисов. Все это позволит посетителю получить
-                  исчерпывающие сведения о компании или частном лице.
+                  Ресурс пропонує комплексні пропозицї з різним рівнем
+                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                  вичерпну інформацію про компанфю чи приватну особу.
+
                 </p>
               </div>
 
@@ -144,31 +154,45 @@
           <li class="project__item">
             <a href="" class="project__link link">
               <div class="project__thumb">
-                <img srcset="./images/project_3_img@1x.jpg 1x, ./images/project_3_img@2x.jpg 2x"
-                  src="./images/project_3_img@1x.jpg" alt="Изображение приложения ресторана Seafood"
-                  class="project__image" width="370" />
+                <picture>
+                  <source srcset="./images/project_3_img@1x.webp 1x, ./images/project_3_img@2x.webp 2x"
+                    type="image/webp" />
+                  <source srcset="./images/project_3_img@1x.jpg 1x, ./images/project_3_img@2x.jpg 2x"
+                    type="image/jpeg" />
+                  <img src="./images/project_3_img@1x.jpg" alt="Додаток ресторану Seafood" class="project__image"
+                    width="370" />
+                </picture>
+
                 <p class="project__overlay">
-                  Ресурс предлагает комплексные предложения с разным уровнем
-                  функционала и сервисов. Все это позволит посетителю получить
-                  исчерпывающие сведения о компании или частном лице.
+                  Ресурс пропонує комплексні пропозицї з різним рівнем
+                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                  вичерпну інформацію про компанфю чи приватну особу.
+
                 </p>
               </div>
               <div class="project__description">
                 <h3 class="project__label">Ресторан Seafood</h3>
-                <span class="project__category">Приложение</span>
+                <span class="project__category">Додаток</span>
               </div>
             </a>
           </li>
           <li class="project__item">
             <a href="" class="project__link link">
               <div class="project__thumb">
-                <img srcset="./images/project_4_img@1x.jpg 1x, ./images/project_4_img@2x.jpg 2x"
-                  src="./images/project_4_img@1x.jpg" alt="Изображение наушников проекта Прайм" class="project__image"
-                  width="370" />
+                <picture>
+                  <source srcset="./images/project_4_img@1x.webp 1x, ./images/project_4_img@2x.webp 2x"
+                    type="image/webp" />
+                  <source srcset="./images/project_4_img@1x.jpg 1x, ./images/project_4_img@2x.jpg 2x"
+                    type="image/jpeg" />
+                  <img src="./images/project_4_img@1x.jpg" alt="Продукція навушники" class="project__image"
+                    width="370" />
+                </picture>
+
                 <p class="project__overlay">
-                  Ресурс предлагает комплексные предложения с разным уровнем
-                  функционала и сервисов. Все это позволит посетителю получить
-                  исчерпывающие сведения о компании или частном лице.
+                  Ресурс пропонує комплексні пропозицї з різним рівнем
+                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                  вичерпну інформацію про компанфю чи приватну особу.
+
                 </p>
               </div>
               <div class="project__description">
@@ -180,29 +204,44 @@
           <li class="project__item">
             <a href="" class="project__link link">
               <div class="project__thumb">
-                <img srcset="./images/project_5_img@1x.jpg 1x, ./images/project_5_img@2x.jpg 2x"
-                  src="./images/project_5_img@1x.jpg" alt="Изображение коробок" class="project__image" width="370" />
+                <picture>
+                  <source srcset="./images/project_5_img@1x.webp 1x, ./images/project_5_img@2x.webp 2x"
+                    type="image/webp" />
+                  <source srcset="./images/project_5_img@1x.jpg 1x, ./images/project_5_img@2x.jpg 2x"
+                    type="image/jpeg" />
+                  <img src="./images/project_5_img@1x.jpg" alt="Проект коробки" class="project__image" width="370" />
+                </picture>
+
                 <p class="project__overlay">
-                  Ресурс предлагает комплексные предложения с разным уровнем
-                  функционала и сервисов. Все это позволит посетителю получить
-                  исчерпывающие сведения о компании или частном лице.
+                  Ресурс пропонує комплексні пропозицї з різним рівнем
+                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                  вичерпну інформацію про компанфю чи приватну особу.
+
                 </p>
               </div>
               <div class="project__description">
                 <h3 class="project__label">Проект Boxes</h3>
-                <span class="project__category">Приложение</span>
+                <span class="project__category">Додаток</span>
               </div>
             </a>
           </li>
           <li class="project__item">
             <a href="" class="project__link link">
               <div class="project__thumb">
-                <img srcset="./images/project_6_img@1x.jpg 1x, ./images/project_6_img@2x.jpg 2x"
-                  src="./images/project_6_img@1x.jpg" alt="Изображения сайта" class="project__image" width="370" />
+                <picture>
+                  <source srcset="./images/project_6_img@1x.webp 1x, ./images/project_6_img@2x.webp 2x"
+                    type="image/webp" />
+                  <source srcset="./images/project_6_img@1x.jpg 1x, ./images/project_6_img@2x.jpg 2x"
+                    type="image/jpeg" />
+                  <img src="./images/project_6_img@1x.jpg" alt="Сайт натхнення не має меж" class="project__image"
+                    width="370" />
+                </picture>
+
                 <p class="project__overlay">
-                  Ресурс предлагает комплексные предложения с разным уровнем
-                  функционала и сервисов. Все это позволит посетителю получить
-                  исчерпывающие сведения о компании или частном лице.
+                  Ресурс пропонує комплексні пропозицї з різним рівнем
+                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                  вичерпну інформацію про компанфю чи приватну особу.
+
                 </p>
               </div>
               <div class="project__description">
@@ -214,17 +253,24 @@
           <li class="project__item">
             <a href="" class="project__link link">
               <div class="project__thumb">
-                <img srcset="./images/project_7_img@1x.jpg 1x, ./images/project_7_img@2x.jpg 2x"
-                  src="./images/project_7_img@1x.jpg" alt="Изображение дизайна книги" class="project__image"
-                  width="370" />
+                <picture>
+                  <source srcset="./images/project_7_img@1x.webp 1x, ./images/project_7_img@2x.webp 2x"
+                    type="image/webp" />
+                  <source srcset="./images/project_7_img@1x.jpg 1x, ./images/project_7_img@2x.jpg 2x"
+                    type="image/jpeg" />
+                  <img src="./images/project_7_img@1x.jpg" alt="Видання Limited Edition" class="project__image"
+                    width="370" />
+                </picture>
+
                 <p class="project__overlay">
-                  Ресурс предлагает комплексные предложения с разным уровнем
-                  функционала и сервисов. Все это позволит посетителю получить
-                  исчерпывающие сведения о компании или частном лице.
+                  Ресурс пропонує комплексні пропозицї з різним рівнем
+                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                  вичерпну інформацію про компанфю чи приватну особу.
+
                 </p>
               </div>
               <div class="project__description">
-                <h3 class="project__label">Издание Limited Edition</h3>
+                <h3 class="project__label">Видання Limited Edition</h3>
                 <span class="project__category">Дизайн</span>
               </div>
             </a>
@@ -232,12 +278,19 @@
           <li class="project__item">
             <a href="" class="project__link link">
               <div class="project__thumb">
-                <img srcset="./images/project_8_img@1x.jpg 1x, ./images/project_8_img@2x.jpg 2x"
-                  src="./images/project_8_img@1x.jpg" alt="Изображение дизайна" class="project__image" width="370" />
+                <picture>
+                  <source srcset="./images/project_8_img@1x.webp 1x, ./images/project_8_img@2x.webp 2x"
+                    type="image/webp" />
+                  <source srcset="./images/project_8_img@1x.jpg 1x, ./images/project_8_img@2x.jpg 2x"
+                    type="image/jpeg" />
+                  <img src="./images/project_8_img@1x.jpg" alt="Проект LAB" class="project__image" width="370" />
+                </picture>
+
                 <p class="project__overlay">
-                  Ресурс предлагает комплексные предложения с разным уровнем
-                  функционала и сервисов. Все это позволит посетителю получить
-                  исчерпывающие сведения о компании или частном лице.
+                  Ресурс пропонує комплексні пропозицї з різним рівнем
+                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                  вичерпну інформацію про компанфю чи приватну особу.
+
                 </p>
               </div>
               <div class="project__description">
@@ -249,18 +302,25 @@
           <li class="project__item">
             <a href="" class="project__link link">
               <div class="project__thumb">
-                <img srcset="./images/project_9_img@1x.jpg 1x, ./images/project_9_img@2x.jpg 2x"
-                  src="./images/project_9_img@1x.jpg" alt="Скриншот приложения компании Growing Business"
-                  class="project__image" width="370" />
+                <picture>
+                  <source srcset="./images/project_9_img@1x.webp 1x, ./images/project_9_img@2x.webp 2x"
+                    type="image/webp" />
+                  <source srcset="./images/project_9_img@1x.jpg 1x, ./images/project_9_img@2x.jpg 2x"
+                    type="image/jpeg" />
+                  <img src="./images/project_9_img@1x.jpg" alt="Додаток компанії Growing Business"
+                    class="project__image" width="370" />
+                </picture>
+
                 <p class="project__overlay">
-                  Ресурс предлагает комплексные предложения с разным уровнем
-                  функционала и сервисов. Все это позволит посетителю получить
-                  исчерпывающие сведения о компании или частном лице.
+                  Ресурс пропонує комплексні пропозицї з різним рівнем
+                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                  вичерпну інформацію про компанфю чи приватну особу.
+
                 </p>
               </div>
               <div class="project__description">
                 <h3 class="project__label">Growing Business</h3>
-                <span class="project__category">Приложение</span>
+                <span class="project__category">Додаток</span>
               </div>
             </a>
           </li>
