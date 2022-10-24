@@ -42,4 +42,10 @@
     background-color: $accent-color;
     box-shadow: $filter-button-shadow-box;
   }
+
+  &.active {
+    color: $primary-white-color;
+    background-color: violet;
+    box-shadow: $filter-button-shadow-box;
+  }
 }

@@ -1,3 +1,29 @@
+.anime {
+  transform: scale(0);
+  opacity: 0;
+}
+
+.hide {
+  animation-name: hide;
+  animation-duration: 500;
+  animation-fill-mode: forwards;
+}
+
+@keyframes hide {
+  0% {
+    visibility: visible;
+    height: 200px;
+  }
+  100% {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    max-width: 0;
+    margin: 0;
+  }
+}
+
 .project {
   @media screen and (min-width: $tablet) {
     display: flex;
@@ -7,6 +33,8 @@
 }
 
 .project__item {
+  overflow: hidden;
+  transition: 0.5s transform;
   @media screen and (min-width: $mobile) {
     width: 450px;
   }
